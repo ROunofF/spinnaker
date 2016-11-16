@@ -3,7 +3,7 @@ server:
   address: 0.0.0.0
 
 redis:
-  connection: ${services.redis.connection:redis://localhost:6379}
+  connection: redis://10.0.180.203:6379
 
 aws:
   enabled: ${providers.aws.enabled:false}

@@ -21,5 +21,5 @@ server:
 #     baseUrl: ${services.igor.baseUrl:8088}
 
 redis:
-  connection: ${services.redis.connection}
+  connection: redis://10.0.180.203:6379
 

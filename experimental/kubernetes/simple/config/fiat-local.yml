@@ -1,0 +1,2 @@
+redis:
+  connection: redis://10.0.180.203:6379

@@ -12,10 +12,10 @@ spinnaker:
     enabled: false
 
 front50:
-  baseUrl: ${services.front50.baseUrl:http://localhost:8080}
+  baseUrl: ${services.front50.baseUrl:http://10.0.156.47:8080}
 
 orca:
-  baseUrl: ${services.orca.baseUrl:http://localhost:8083}
+  baseUrl: ${services.orca.baseUrl:http://10.0.134.79:8083}
 
 endpoints.health.sensitive: false
 

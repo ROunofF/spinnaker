@@ -14,7 +14,7 @@ dockerRegistry:
   enabled: true
 
 redis:
-  connection: ${services.redis.connection:redis://localhost:6379}
+  connection: redis://10.0.180.203:6379
   
 # Igor depends on Clouddriver and Echo. These are normally configured
 # in spinnaker[-local].yml (if present), otherwise, uncomment this.
