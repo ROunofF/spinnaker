@@ -1,21 +1,21 @@
 server:
   port: ${services.igor.port:8088}
   address: 0.0.0.0
-
-jenkins:
-  enabled: false
-  masters:
-    - name: fake
-      address: jenkins
-      username: endpoint
-      password: hunter2
+# 
+# jenkins:
+#   enabled: true
+#   masters:
+#     - name: fake
+#       address: jenkins
+#       username: endpoint
+#       password: hunter2
 
 dockerRegistry:
   enabled: true
 
 redis:
   connection: redis://10.0.180.203:6379
-  
+
 # Igor depends on Clouddriver and Echo. These are normally configured
 # in spinnaker[-local].yml (if present), otherwise, uncomment this.
 # services:

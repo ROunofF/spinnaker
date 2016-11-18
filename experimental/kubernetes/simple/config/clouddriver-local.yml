@@ -2,12 +2,12 @@ server:
   address: 0.0.0.0
 
 dockerRegistry:
-  enabled: true 
+  enabled: true
   accounts:
     - name: nuglif-docker-registry
-      address: https://nud-docker-registry.lapresse.ca:5000 
-      username: 
-      passwordFile: 
+      address: https://nud-docker-registry.lapresse.ca:5000
+      username:
+      passwordFile:
     - name: my-docker-account
       address: https://index.docker.io
       repositories:
@@ -18,6 +18,6 @@ redis:
 kubernetes:
   enabled: true
   accounts:
-    - name: Nuglif
+    - name: my-kubernetes-account
       dockerRegistries:
       - accountName: nuglif-docker-registry

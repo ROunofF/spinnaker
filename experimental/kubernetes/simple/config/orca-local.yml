@@ -34,4 +34,6 @@ default:
 redis:
   connection: redis://10.0.180.203:6379
 
-
+script:
+  master: Jenkins # name of Jenkins master in Spinnaker
+  job: docker-bob-the-builder-from-git # from Jenkins job configuration
